@@ -1,7 +1,7 @@
 {
   "name": "mb-mquery",
   "version": "2.3.1",
-  "description": "Expressive query building for MongoDB, add not operator",
+  "description": "Expressive query building for MongoDB, add MongoDB 3.4 operator",
   "main": "lib/mquery.js",
   "scripts": {
     "test": "mocha test/index.js test/*.test.js"
@@ -31,5 +31,8 @@
     "query",
     "builder"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "homepage": "https://github.com/aheckmann/mquery/"
 }
