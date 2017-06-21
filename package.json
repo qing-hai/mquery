@@ -1,14 +1,14 @@
 {
-  "name": "mquery",
+  "name": "mb-mquery",
   "version": "2.3.1",
-  "description": "Expressive query building for MongoDB",
+  "description": "Expressive query building for MongoDB, add not operator",
   "main": "lib/mquery.js",
   "scripts": {
     "test": "mocha test/index.js test/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/aheckmann/mquery.git"
+    "url": "git://github.com/qing-hai/mquery.git"
   },
   "dependencies": {
     "bluebird": "2.10.2",
