@@ -1,6 +1,6 @@
 {
   "name": "mb-mquery",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Expressive query building for MongoDB, add MongoDB 3.4 operator",
   "main": "lib/mquery.js",
   "scripts": {
@@ -11,8 +11,9 @@
     "url": "git://github.com/qing-hai/mquery.git"
   },
   "dependencies": {
-    "bluebird": "2.10.2",
+    "bluebird": "^2",
     "debug": "2.6.8",
+    "lodash.merge": "^4.6.0",
     "regexp-clone": "0.0.1",
     "sliced": "0.0.5"
   },
