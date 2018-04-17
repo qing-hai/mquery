@@ -363,7 +363,7 @@ describe('mquery', function(){
 
   describe('exists', function(){
     it('with 0 args', function(){
-      it('throws if not used after where()', function(){
+      it('exists throws if not used after where()', function(){
         assert.throws(function () {
           mquery().exists()
         }, /must be used after where/);
@@ -407,7 +407,17 @@ describe('mquery', function(){
 
     it('is chainable', function(){
       var m = mquery().where('name').exists().find({ x: 1 });
-      var check = { name: { $exists: true }, x: 1};
+      var check = { name: {$exists: true }, x: 1};
+      assert.deepEqual(m._conditions, check);
+    })
+    it('is chainable multiple conditions 1', function(){
+      var m = mquery().where('name').eq(null).exists().find({ x: 1 });
+      var check = { name: {$eq:null, $exists: true }, x: 1};
+      assert.deepEqual(m._conditions, check);
+    })
+    it('is chainable multiple conditions 2', function(){
+      var m = mquery().where('name').eq(true).exists().find({ x: 1 });
+      var check = { name: {$eq:true, $exists: true }, x: 1};
       assert.deepEqual(m._conditions, check);
     })
   })
