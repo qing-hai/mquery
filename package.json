@@ -1,6 +1,6 @@
 {
   "name": "mb-mquery",
-  "version": "2.3.17",
+  "version": "2.4.1",
   "description": "Expressive query building for MongoDB, add MongoDB 3.4 operator",
   "main": "lib/mquery.js",
   "scripts": {
